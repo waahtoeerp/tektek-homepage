@@ -1,0 +1,43 @@
+{
+  "site": {
+    "name": "Tek Tek Oy",
+    "title": "Tek Tek Oy",
+    "description": "Tek Tek Oy — placeholder, korvaa omalla kuvauksella."
+  },
+  "nav": {
+    "services": "Palvelut",
+    "about": "Yritys",
+    "contact": "Yhteys"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Uusi yritys",
+      "title": "Tek Tek Oy",
+      "lead": "Lyhyt kuvaus siitä, mitä teemme ja kenelle. Korvaa tämä omalla tekstillä.",
+      "cta": "Ota yhteyttä",
+      "ctaTarget": "contact"
+    },
+    "services": {
+      "title": "Palvelut",
+      "items": [
+        { "title": "Palvelu yksi", "body": "Kuvaus palvelusta. Korvaa omalla tekstillä." },
+        { "title": "Palvelu kaksi", "body": "Kuvaus palvelusta. Korvaa omalla tekstillä." },
+        { "title": "Palvelu kolme", "body": "Kuvaus palvelusta. Korvaa omalla tekstillä." }
+      ]
+    },
+    "about": {
+      "title": "Yritys",
+      "body": "Kerro tässä, kuka olet, miksi yritys on olemassa ja mitä arvoja se kantaa."
+    },
+    "contact": {
+      "title": "Yhteys",
+      "body": "Kerro tarpeestasi, vastaamme pian.",
+      "email": "info@example.com",
+      "phone": "+358 00 000 0000",
+      "businessId": "Y-tunnus: 000000-0"
+    }
+  },
+  "footer": {
+    "rights": "Tek Tek Oy. Kaikki oikeudet pidätetään."
+  }
+}

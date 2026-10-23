@@ -1,0 +1,23 @@
+{
+  "colors": {
+    "background": "#F7F5F0",
+    "surface": "#FFFFFF",
+    "text": "#1B2432",
+    "muted": "#5B6573",
+    "primary": "#14213D",
+    "onPrimary": "#FFFFFF",
+    "accent": "#0B7A86",
+    "signal": "#FF6B4A",
+    "border": "#DCE1E7"
+  },
+  "font": {
+    "heading": "\"Space Grotesk\", system-ui, sans-serif",
+    "body": "Inter, system-ui, sans-serif",
+    "size": "17px"
+  },
+  "layout": {
+    "radius": "12px",
+    "gap": "24px",
+    "maxWidth": "1080px"
+  }
+}
