@@ -1,19 +1,19 @@
 :root {
-  --background: #F7F5F0;
+  --background: #FFFFFF;
   --surface: #FFFFFF;
-  --text: #1B2432;
-  --muted: #5B6573;
-  --primary: #14213D;
+  --text: #000000;
+  --muted: #555555;
+  --primary: #000000;
   --onPrimary: #FFFFFF;
-  --accent: #0B7A86;
-  --signal: #FF6B4A;
-  --border: #DCE1E7;
+  --accent: #000000;
+  --signal: #000000;
+  --border: #000000;
   --font-heading: system-ui, sans-serif;
   --font-body: system-ui, sans-serif;
   --font-size: 17px;
-  --radius: 12px;
+  --radius: 0px;
   --gap: 24px;
-  --max-width: 1080px;
+  --max-width: 1200px;
 }
 
 * {
@@ -22,198 +22,55 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--background);
   color: var(--text);
   font-family: var(--font-body);
   font-size: var(--font-size);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-h1, h2, h3 {
-  font-family: var(--font-heading);
-  color: var(--primary);
-  line-height: 1.15;
-  margin: 0 0 0.5em;
-}
-
-h1 { font-size: clamp(2.4rem, 6vw, 4rem); letter-spacing: -0.02em; }
-h2 { font-size: clamp(1.6rem, 3.5vw, 2.25rem); }
-h3 { font-size: 1.2rem; }
-
-p { margin: 0 0 1em; }
-
-a {
-  color: var(--accent);
-}
-
-a:focus-visible,
-.button:focus-visible {
-  outline: 3px solid var(--signal);
-  outline-offset: 3px;
-}
-
-/* Header */
-
-.site-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--gap);
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: var(--gap) 16px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: var(--primary);
-}
-
-.brand-name {
+h1 {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: -0.01em;
-}
-
-.brand-name span {
-  font-weight: 500;
-  color: var(--accent);
-}
-
-.site-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.site-nav a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.site-nav a:hover {
-  color: var(--accent);
-}
-
-/* Layout */
-
-main {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-main section {
-  padding: calc(var(--gap) * 2.5) 0;
-  border-top: 1px solid var(--border);
-}
-
-main section:first-child {
-  border-top: 0;
-}
-
-/* Hero */
-
-.hero {
-  padding-top: calc(var(--gap) * 2) !important;
-}
-
-.eyebrow {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  color: var(--accent);
+  color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.85rem;
-}
-
-.lead {
-  font-size: 1.2rem;
-  color: var(--muted);
-  max-width: 36em;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 14px 26px;
-  border-radius: var(--radius);
-  background: var(--primary);
-  color: var(--onPrimary);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.button:hover {
-  background: var(--accent);
-}
-
-/* Cards */
-
-.card-grid {
-  display: grid;
-  gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: var(--gap);
-}
-
-.card p {
-  color: var(--muted);
-  margin-bottom: 0;
-}
-
-/* Contact */
-
-.contact-list {
-  list-style: none;
-  padding: 0;
+  /* Sized so "TEK TEK OY" stays on one line at any width. */
+  font-size: min(13vw, 12rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
   margin: 0;
 }
 
-.contact-list li {
-  padding: 4px 0;
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
 }
 
-/* Footer */
+.hero {
+  text-align: center;
+}
+
+.lead {
+  margin: 0.4em 0 0;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--text);
+}
 
 .site-footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: calc(var(--gap) * 2) 16px;
-  border-top: 1px solid var(--border);
+  padding: 24px 16px;
+  text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
 .site-footer p {
   margin: 0;
-}
-
-/* Phone */
-
-@media (max-width: 600px) {
-  :root {
-    --gap: 16px;
-  }
-
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  main section {
-    padding: calc(var(--gap) * 2) 0;
-  }
 }

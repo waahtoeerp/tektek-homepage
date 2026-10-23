@@ -3,10 +3,7 @@
     "path": "/",
     "file": "index.html",
     "sections": [
-      { "key": "hero", "type": "hero" },
-      { "key": "services", "type": "cards" },
-      { "key": "about", "type": "text" },
-      { "key": "contact", "type": "contact" }
+      { "key": "hero", "type": "hero" }
     ]
   }
 }

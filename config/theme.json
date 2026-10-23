@@ -1,14 +1,14 @@
 {
   "colors": {
-    "background": "#F7F5F0",
+    "background": "#FFFFFF",
     "surface": "#FFFFFF",
-    "text": "#1B2432",
-    "muted": "#5B6573",
-    "primary": "#14213D",
+    "text": "#000000",
+    "muted": "#555555",
+    "primary": "#000000",
     "onPrimary": "#FFFFFF",
-    "accent": "#0B7A86",
-    "signal": "#FF6B4A",
-    "border": "#DCE1E7"
+    "accent": "#000000",
+    "signal": "#000000",
+    "border": "#000000"
   },
   "font": {
     "heading": "\"Space Grotesk\", system-ui, sans-serif",
@@ -16,8 +16,8 @@
     "size": "17px"
   },
   "layout": {
-    "radius": "12px",
+    "radius": "0px",
     "gap": "24px",
-    "maxWidth": "1080px"
+    "maxWidth": "1200px"
   }
 }
