@@ -1,0 +1,7 @@
+# Serves the static homepage from public/ on tektek.fi.
+# Cloudflare deploys this on every push to main.
+name = "tektek-homepage"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./public"
