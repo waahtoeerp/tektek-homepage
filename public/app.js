@@ -3,6 +3,7 @@ function applyTheme(theme) {
   for (const [name, value] of Object.entries(theme.colors)) root.setProperty(`--${name}`, value);
   root.setProperty("--font-heading", theme.font.heading);
   root.setProperty("--font-body", theme.font.body);
+  root.setProperty("--font-display", theme.font.display);
   root.setProperty("--font-size", theme.font.size);
   root.setProperty("--radius", theme.layout.radius);
   root.setProperty("--gap", theme.layout.gap);
@@ -18,10 +19,12 @@ function el(tag, className, text) {
 
 function renderHero(texts) {
   const section = el("section", "hero");
-  section.append(
-    el("h1", "", texts.title),
-    el("p", "lead", texts.lead),
-  );
+  const logo = el("img", "logo");
+  logo.src = "/brand/tektek-logo.svg";
+  logo.alt = texts.title;
+  const conversation = el("div", "conversation");
+  for (const line of texts.lines) conversation.append(el("p", "", line));
+  section.append(conversation, logo);
   return section;
 }
 
@@ -30,7 +33,7 @@ const RENDERERS = {
 };
 
 async function init() {
-  const config = await (await fetch("/api/config")).json();
+  const config = await (await fetch("/config.json")).json();
   applyTheme(config.theme);
 
   const page = config.pages[document.body.dataset.page];

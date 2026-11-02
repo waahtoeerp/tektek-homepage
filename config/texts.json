@@ -1,16 +1,19 @@
 {
   "site": {
-    "name": "Tek Tek Oy",
-    "title": "Tek Tek Oy",
-    "description": "Tek Tek Oy. Coming soon."
+    "name": "tek tek oy",
+    "title": "tek tek oy",
+    "description": "tek tek oy"
   },
   "home": {
     "hero": {
-      "title": "Tek Tek Oy",
-      "lead": "Coming soon..."
+      "title": "tek tek oy",
+      "lines": [
+        "“Tekeeks ne?”",
+        "“Tekee tekee”"
+      ]
     }
   },
   "footer": {
-    "rights": "Tek Tek Oy. All rights reserved."
+    "rights": "tek tek oy. All rights reserved."
   }
 }

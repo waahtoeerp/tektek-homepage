@@ -1,18 +1,19 @@
 {
   "colors": {
-    "background": "#000000",
-    "surface": "#000000",
-    "text": "#FFFFFF",
-    "muted": "#AAAAAA",
-    "primary": "#FFFFFF",
-    "onPrimary": "#000000",
-    "accent": "#FFFFFF",
-    "signal": "#FFFFFF",
-    "border": "#FFFFFF"
+    "background": "#F5EFE4",
+    "surface": "#F5EFE4",
+    "text": "#000000",
+    "muted": "#5C5C5C",
+    "primary": "#000000",
+    "onPrimary": "#F5EFE4",
+    "accent": "#2F80ED",
+    "signal": "#2F80ED",
+    "border": "#000000"
   },
   "font": {
-    "heading": "\"Space Grotesk\", system-ui, sans-serif",
-    "body": "Inter, system-ui, sans-serif",
+    "heading": "'Archivo Black', 'Arial Black', sans-serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "display": "'Archivo', system-ui, sans-serif",
     "size": "17px"
   },
   "layout": {
