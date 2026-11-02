@@ -44,12 +44,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 56px;
+  gap: 16px;
   text-align: center;
 }
 
 .logo {
-  width: min(70vw, 440px);
+  width: min(62vw, 340px);
   height: auto;
   display: block;
 }
@@ -59,7 +59,7 @@ main {
   font-family: var(--font-display);
   font-weight: 200;
   font-stretch: 125%;
-  font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+  font-size: clamp(1.1rem, 2.6vw, 1.7rem);
   letter-spacing: 0.02em;
   color: var(--text);
 }

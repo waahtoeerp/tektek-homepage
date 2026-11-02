@@ -24,7 +24,7 @@ function renderHero(texts) {
   logo.alt = texts.title;
   const conversation = el("div", "conversation");
   for (const line of texts.lines) conversation.append(el("p", "", line));
-  section.append(conversation, logo);
+  section.append(logo, conversation);
   return section;
 }
 
