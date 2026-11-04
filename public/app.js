@@ -47,9 +47,11 @@ async function init() {
     main.append(RENDERERS[section.type](section.key, texts.home[section.key]));
   }
 
-  document.getElementById("footer").append(
-    el("p", "", `© ${new Date().getFullYear()} ${texts.footer.rights}`),
-  );
+  const footerLine = el("p", "", `© ${new Date().getFullYear()} ${texts.footer.rights} `);
+  const privacy = el("a", "", "Tietosuojaseloste");
+  privacy.href = "/tietosuoja.html";
+  footerLine.append(" · ", privacy);
+  document.getElementById("footer").append(footerLine);
 }
 
 init();
